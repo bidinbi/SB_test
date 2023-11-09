@@ -1,7 +1,18 @@
-SB_test
+Тестовое задание в команду СберСпасибо
 ==============================
+При выполнении задания я выделил мало времени на качественное решение самой задачи, т.к. главная задача была показать навыки кода.
+Использовался шаблон cookiecutter.
 
-test task
+В папке data/raw лежат сырые данные.
+
+В папке src/models лежат три файла:
+    1) parent_model.py -- создается родительский класс модели, от которой будут наследоваться следующие модели
+    2) popular_model.py -- создается простенькая рекомендационная модель, которая предсказывает всегда самые популярные товары
+    3) svd_model.py -- создается модель рекомендаций на основе сингулярного разложения
+    
+Файл run.py:
+    В этом файле происходит логика запуска эксперимента. Создается, обрабатывается и разбивается на трейн и тест датасет, обучаются и тестируются различные модели, результаты выводятся в терминал и сохраняются в виде pandas dataframe в папке reports/experiments.
+
 
 Project Organization
 ------------
@@ -50,8 +61,8 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    |
+    └── run.py             <- script to run
 
 
 --------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
