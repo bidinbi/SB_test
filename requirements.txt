@@ -2,7 +2,13 @@
 -e .
 
 # external requirements
+pandas
+numpy
+scikit-learn
+scipy
 click
+rs_metrics
+tabulate
 Sphinx
 coverage
 awscli
